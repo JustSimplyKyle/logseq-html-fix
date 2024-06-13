@@ -17,4 +17,45 @@ Clone the repository and build the project:
 git clone https://github.com/JustSimplyKyle/logseq-html-fix.git
 cd logseq-html-fix
 cargo build --release
+```
 
+## Usage
+
+The tool takes an input HTML file and outputs the modified version to a specified location.
+
+```sh
+./target/release/logseq-html-fix -i path/to/input.html -o path/to/output.html
+```
+
+### Command-line Arguments
+
+- `-i`, `--input`: Path to the input HTML file.
+- `-o`, `--output`: Path to the output HTML file.
+
+## Example
+
+```sh
+./target/release/logseq-html-fix -i example/input.html -o example/output.html
+```
+
+## Adjusting Printing Settings
+
+To ensure the best printing results, adjust your browser's print settings:
+- **Remove margins**: This will ensure that the content fits well on the page.
+- **Add background colors and images**: This will maintain the visual integrity of your HTML content.
+
+### How to Adjust Printing Settings
+
+1. Open the modified HTML file in your web browser.
+2. Open the print dialog (`Ctrl+P` or `Cmd+P`).
+3. Go to **More settings** or **Advanced settings**.
+4. Set **Margins** to **None**.
+5. Enable the **Background graphics** option.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
